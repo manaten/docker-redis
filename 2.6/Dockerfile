@@ -10,9 +10,9 @@ RUN apt-get update \
 RUN curl -o /usr/local/bin/gosu -SL 'https://github.com/tianon/gosu/releases/download/1.1/gosu' \
 	&& chmod +x /usr/local/bin/gosu
 
-ENV REDIS_VERSION 2.6.7
-ENV REDIS_DOWNLOAD_URL http://redis.googlecode.com/files/redis-2.6.7.tar.gz
-ENV REDIS_DOWNLOAD_SHA1 fd7fcbec29956ec01710350b49653a2eda72fbd3
+ENV REDIS_VERSION 2.6.15
+ENV REDIS_DOWNLOAD_URL http://download.redis.io/releases/redis-2.6.15.tar.gz
+ENV REDIS_DOWNLOAD_SHA1 037b116efb02a1d31c85f45a38d3a6cd637ba573
 
 # for redis-sentinel see: http://redis.io/topics/sentinel
 RUN buildDeps='gcc libc6-dev make'; \
